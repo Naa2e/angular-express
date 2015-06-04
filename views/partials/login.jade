@@ -1,1 +1,30 @@
-h1 Login
+.row
+    .col-md-4
+
+      .col-md-4
+        h1 Login
+
+        fieldset
+          form#loginForm(method='POST', action='/user/register')
+            .formfield
+              .input-group
+                input#inputText.form-control(type='text', name='username', placeholder='Username', aria-describedby='sizing-addon1')
+
+            br
+
+            .formfield
+              .input-group
+                input#inputText.form-control(type='password', name='password', placeholder='Password', aria-describedby='sizing-addon1')
+
+            br
+
+            input.submitbutton(type='submit', value='Login In!')
+
+      .col-md-4
+
+    #spacer.row
+      .col-md-4
+
+      .col-md-4
+
+      .col-md-4

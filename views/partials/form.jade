@@ -1,0 +1,55 @@
+.row
+    .col-md-4
+
+      .col-md-4
+        div
+            form(method='POST', action='/todo')
+                div
+                  input(type='hidden', name='_id', value='')
+
+                .formfield
+                  .input-group
+                  input(value='', type='text', name='title', placeholder='Task', required='')
+                br
+
+                .formfield
+                  .input-group
+                    textarea(name='description', placeholder='Description')
+
+                .formfield
+                  .input-group
+                    label(for='Priority') Priority Level
+
+                    select#priority(name='priority')
+                      option(value='1') Red (High)
+
+                      option(value='2') Yellow
+
+                      option(value='3') Blue
+
+                .formfield
+                  .input-group
+                    label(for='due_date') Due Date
+
+                    input(type='date', name='due_date')
+
+                  div
+                    label.formfield(for='complete') Check for Complete
+
+                    input(type='checkbox', name='complete')
+                  br
+
+                .button
+                  button(type='submit') Save
+
+      .col-md-4
+
+    #spacer.row
+      .col-md-4
+
+      .col-md-4
+
+      .col-md-4
+
+
+
