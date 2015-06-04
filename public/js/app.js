@@ -10,7 +10,7 @@ angular.module('myApp', [
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/index', {
+    when('/', {
       templateUrl: 'partials/index',
       controller: 'IndexCtrl'
     }).
@@ -25,6 +25,10 @@ config(function ($routeProvider, $locationProvider) {
     when('/Form', {
       templateUrl: 'partials/form',
       controller: 'FormCtrl'
+    }).
+    when('/Todo', {
+      templateUrl: 'partials/todo',
+      controller: 'TodoCtrl'
     }).
     otherwise({
       redirectTo: '/index'
